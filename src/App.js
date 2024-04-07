@@ -40,13 +40,13 @@ function App() {
 				</div>
         <div className="navbar">
             <span className='menu'>Home</span>
-                    <Link to="/" onClick={unCheck}>About Me</Link>
-                    <a href="/#skills" onClick={unCheck}>Skills</a>
-                    <Link to="/#projects" onClick={unCheck}>Projects</Link>
-                    <Link to="/#recommendations" onClick={unCheck}>Recommendations</Link>
+                    <a to="/frontend#about" onClick={unCheck}>About Me</a>
+                    <a href="/frontend#skills" onClick={unCheck}>Skills</a>
+                    <a href="/frontend#projects" onClick={unCheck}>Projects</a>
+                    <a href="/frontend#recommendations" onClick={unCheck}>Recommendations</a>
             <span className='menu'>Main Navbar</span>
             <nav className='mainNavbarPhone'>
-                  <Link onClick={unCheck} className='aLink' to='/'>
+                  <Link onClick={unCheck} className='aLink' to='/frontend'> {/*Untuk membuat filenya langsung terbuka maka gunakan nama repositori disini 'frontend' sebagai ganti dari '/'*/}
                     Home
                   </Link>
                   <Link onClick={unCheck} className='aLink' to='/produk'>
@@ -72,7 +72,7 @@ function App() {
           </nav>
         </header>
       <nav className='mainNavbar'>
-        <Link className='aLink' to='/'>
+        <Link className='aLink' to='/frontend'>
           Home
         </Link>
         <Link className='aLink' to='/produk'>
@@ -86,7 +86,7 @@ function App() {
         </Link>
       </nav>
         <Routes>
-            <Route path='/' element={<Dashboard />}/>
+            <Route path='/frontend' element={<Dashboard />}/>
             <Route path='/penjualan' element={<Penjualan />}/>
             <Route path='/jasa' element={<Jasa />}/>
             <Route path='/produk' element={<Produk />}/>
