@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/frontend_for_business/static/css/main.739cfdbe.css",
+    "main.js": "/frontend_for_business/static/js/main.81367378.js",
+    "static/js/453.d855a71b.chunk.js": "/frontend_for_business/static/js/453.d855a71b.chunk.js",
+    "static/media/bg.jpg": "/frontend_for_business/static/media/bg.a3339421092fea2a3968.jpg",
+    "static/media/Developing Front-End Apps with React_page-0001.jpg": "/frontend_for_business/static/media/Developing Front-End Apps with React_page-0001.f9909ae829e23742b40d.jpg",
+    "static/media/slideImage2.png": "/frontend_for_business/static/media/slideImage2.23510b34ca37ebc95252.png",
+    "static/media/slideImage3.png": "/frontend_for_business/static/media/slideImage3.dfb00d7159600618d9cd.png",
+    "static/media/slideImage1.png": "/frontend_for_business/static/media/slideImage1.68932591c0c1181211ec.png",
+    "static/media/phone.png": "/frontend_for_business/static/media/phone.a3b2abacf1e861dcf879.png",
+    "static/media/profile.jpeg": "/frontend_for_business/static/media/profile.3b102809f2ef8a0d589e.jpeg",
+    "static/media/express.png": "/frontend_for_business/static/media/express.67a235b3413090a0f73a.png",
+    "static/media/Afiflogo.png": "/frontend_for_business/static/media/Afiflogo.6639334f3ea8a1dfb7fd.png",
+    "static/media/node.png": "/frontend_for_business/static/media/node.7c94c770dd462ef14ec9.png",
+    "static/media/mail.png": "/frontend_for_business/static/media/mail.7f0432c3a7d36f687c69.png",
+    "static/media/js.png": "/frontend_for_business/static/media/js.ff45f100667bf2d1eca1.png",
+    "static/media/php.png": "/frontend_for_business/static/media/php.834ff4b2c3a5211035a5.png",
+    "static/media/reactjs.png": "/frontend_for_business/static/media/reactjs.6709c5449aef3915c9ab.png",
+    "static/media/java.png": "/frontend_for_business/static/media/java.df2ef9fdccdd35c4e527.png",
+    "index.html": "/frontend_for_business/index.html",
+    "main.739cfdbe.css.map": "/frontend_for_business/static/css/main.739cfdbe.css.map",
+    "main.81367378.js.map": "/frontend_for_business/static/js/main.81367378.js.map",
+    "453.d855a71b.chunk.js.map": "/frontend_for_business/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.739cfdbe.css",
+    "static/js/main.81367378.js"
+  ]
+}
