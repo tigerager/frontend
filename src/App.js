@@ -41,7 +41,7 @@ function App() {
         <div className="navbar">
             <span className='menu'>Home</span>
                     <Link to="/" onClick={unCheck}>About Me</Link>
-                    <Link to="/#skills" onClick={unCheck}>Skills</Link>
+                    <a href="/#skills" onClick={unCheck}>Skills</a>
                     <Link to="/#projects" onClick={unCheck}>Projects</Link>
                     <Link to="/#recommendations" onClick={unCheck}>Recommendations</Link>
             <span className='menu'>Main Navbar</span>
