@@ -2,22 +2,125 @@
     margin-top: 185px;
     text-align: center;
     color: green;
+    font-family: cursive;
     .userCreateContainer{
         background-color: chartreuse;
-        padding: 2%;
+        padding: 30px 2% 30px 2% ;
         width: 30%;
         border-radius: 8%;
         margin-left: 33%;
+        height: 210px;
         .inputUserCreate{
             padding: 0.7%;
             border-radius: 4%;
             font-size: 14px;
             font-family: cursive;
             display: block;
-            margin: 1% 0 1% 18.5% ;
+            margin: 1% 0 1% 1% ;
             position: relative;
-            width: 60%;
+            width: 95%;
             height: 30px;
           }
+        button{
+            padding: 0.7%;
+            border-radius: 4%;
+            font-size: 14px;
+            font-family: cursive;
+            display: block;
+            width: 28.75%;
+            margin: 1% 0 1% 1% ;
+            background-color: rgb(69, 163, 131);
+            &:hover{
+                background-color: rgb(218, 232, 227);
+                font-weight: bold;
+            }
+        }
       }
+}
+
+@media only screen and (max-width: 980px){
+    .createproduk{
+        .userCreateContainer{
+            width: 290px;
+            button{
+                width: 282px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 844px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 30%;
+            button{
+                margin-left: -1.9%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 681px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 26%;
+            button{
+                margin-left: -5.7%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 594px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 22%;
+            button{
+                margin-left: -9.3%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 17%;
+            button{
+                margin-left: -13.79%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 423px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 12%;
+            button{
+                margin-left: -18.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 372px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 3%;
+            button{
+                margin-left: -26.6%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 317px){
+    .createproduk{
+        .userCreateContainer{
+            margin-left: 0;
+            button{
+                margin-left: -29.1%;
+            }
+        }
+    }
 }

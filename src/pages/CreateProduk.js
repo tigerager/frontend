@@ -36,7 +36,7 @@ const CreateProduk = () => {
             <input onChange={formik.handleChange} value={formik.values.nama_produk} className='inputUserCreate' name="nama_produk" type='text' placeholder='Nama produk' />
             <input onChange={formik.handleChange} value={formik.values.jumlah} className='inputUserCreate' name="jumlah" type='number' placeholder='Jumlah produk' />
             <input accept='image/*' onChange={e=>setFile(e.currentTarget.files[0])} className='inputUserCreate' type='file' name="gambar" />
-            <button type='submit' style={{ position: 'relative', width: '62%', height: '35px' }} className='inputUserCreate' >Upload Produk</button>
+            <button type='submit' style={{ position: 'absolute', top: '470px', left: '34.5%', height: '40px' }} >Upload Produk</button>
         </form>
     </div>
   )
