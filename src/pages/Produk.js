@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './produk.scss';
+import { Link } from 'react-router-dom';
 
 const Produk = () => {
     const [produks, setProduks] = useState([]);
@@ -12,7 +13,7 @@ const Produk = () => {
   return (
     <div className='produk'>
         <h1>Pilihan Produk</h1>
-        <a className='btnCreateProduk' href='/produk/createProduk'>Masukkan Produk</a>
+        <Link className='btnCreateProduk' to='/produk/createProduk'>Masukkan Produk</Link>
         <div className='produkContainer'> 
         {produks.map((value, key)=>{
             return (
