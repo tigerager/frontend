@@ -13,7 +13,7 @@ const Produk = () => {
   return (
     <div className='produk'>
         <h1>Pilihan Produk</h1>
-        <Link className='btnCreateProduk' to='/produk/createProduk'>Masukkan Produk</Link>
+        <Link className='btnCreateProduk' to='/createProduk'>Masukkan Produk</Link>
         <div className='produkContainer'> 
         {produks.map((value, key)=>{
             return (

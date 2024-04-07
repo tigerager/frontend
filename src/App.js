@@ -40,7 +40,7 @@ function App() {
 				</div>
         <div className="navbar">
             <span className='menu'>Home</span>
-                    <Link to="/#about" onClick={unCheck}>About Me</Link>
+                    <Link to="/" onClick={unCheck}>About Me</Link>
                     <Link to="/#skills" onClick={unCheck}>Skills</Link>
                     <Link to="/#projects" onClick={unCheck}>Projects</Link>
                     <Link to="/#recommendations" onClick={unCheck}>Recommendations</Link>
@@ -90,7 +90,7 @@ function App() {
             <Route path='/penjualan' element={<Penjualan />}/>
             <Route path='/jasa' element={<Jasa />}/>
             <Route path='/produk' element={<Produk />}/>
-            <Route path='/produk/createProduk' element={<CreateProduk />}/>
+            <Route path='/createProduk' element={<CreateProduk />}/>
         </Routes>
     </div>
   );
