@@ -3,10 +3,75 @@ body{
 }
 nav{
 	display: flex;
-	background-color: greenyellow;
+	background-color: rgba(206, 215, 39, 0.605);
 	font-family: cursive;
 	height: 152px;
-	width: 100.45%;
+	width: 99.3%;
+	position: absolute;
+	top: 1%;
+	right: 0.2%;
+}
+
+#about p{
+	color: #00290e;
+}
+.introWrapper{
+	background-color: #3dbfa36d;	
+	border-radius: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+.introWrapper h1{
+	color: #0b6334;
+}
+
+.aboutContent{
+	padding-top: 155px;
+	background-image: url('./pages/images/bg.jpg');
+	background-size: cover;
+	width: 100.58%;
+	margin-left: -0.27%;
+}
+
+.removeOver{
+	height: 152px;
+	width: 1.2%;
+	left: -1%;
+	position: absolute;
+	background-color: whitesmoke;
+	z-index: 2;
+	top: 1%;
+}
+.mainNavbar{
+	position: absolute;
+	top: 83.5px;
+	left: 320px;
+	background-color: unset;
+	z-index: 4;
+	height: 74px;
+	width: 65%;
+}
+.mainNavbarPhone{
+	display: none;
+	background-color: unset;
+}
+
+.aLink{
+	padding: 23px 1.98% 1.78% 1.98%;
+	text-align: center;
+	font-family: cursive;
+	font-size: 19px;
+	text-decoration: none;
+	color: #31727b;
+}
+.aLink:hover{
+	background-color: rgba(112, 137, 10, 0.626);
+	text-align: center;
+	height: 34px;
 }
 
 .menu, .headercontact{
@@ -41,18 +106,19 @@ nav{
 .navbar a:hover{
 	font-weight: bold;
 	text-decoration: underline;
+	color: black;
 }
 
 .navbar a{
 	font-size: 18px;
 	text-decoration: none;
 	padding: 20px;
-	color: black;
+	color: whitesmoke;
 }
 
 .about {
 	display: flex;
-	margin: 3% 20% 29% 15%;
+	margin: 3% 20% 29% 16.5%;
 	font-family: 'Trebuchet MS', sans-serif;
 
 }
@@ -65,8 +131,16 @@ main .profil{
 
 }
 
+.intro p{
+	color: rgb(0, 0, 0);
+	margin-left: -2.5%;
+	margin-right: 2%;
+	
+}
+
 main h1{
 	color: #04895D;
+	margin-left: -2.5%;
 }
 
 .intro{
@@ -133,7 +207,7 @@ main h1{
 }
 
 .projects{
-	padding: 1% 10% 20% 10%;
+	padding: 1% 10% 8% 10%;
 
 }
 
@@ -144,7 +218,7 @@ main h1{
 }
 
 .recommendations{
-	padding: 1% 10% 10% 5%;
+	padding: 1% 10% 5% 5%;
 	text-align: center;
 }
 
@@ -299,6 +373,20 @@ fieldset {
 	.NavbartoAnotherPage{
 		margin-top: 0.5px;
 	}	
+	.contact {
+		display: none;
+		color: chocolate;
+	}
+	#check:checked ~ .navbar .contact{
+		display: block;
+		position: static;
+		margin-left: 8%;
+		margin-top: 8%;
+	}
+
+	.navbar .headercontact{
+		display: block;
+	}
 	nav{
 		width: 101.4%;
 	}
@@ -310,10 +398,6 @@ fieldset {
 	}
 	.next, .prev{
 		margin-top: 0;
-	}
-
-	.navbar .headercontact{
-		display: none;
 	}
 	.navbar a{
 	  display: none;
@@ -399,6 +483,7 @@ fieldset {
 		left: 48%;
 		padding-left: 1%;
 		z-index: 5;
+		margin-top: 61px;
 
 	}
 	#contact{
@@ -434,6 +519,28 @@ fieldset {
 		}
   }
 
+  @media only screen and (max-width: 654px){
+    .mainNavbarPhone{
+		display: block;
+		position: relative;
+	}
+	.aLink{
+		padding: 0;
+		text-align: left;
+	}
+	.aLink:hover{
+		background-color: unset;
+		text-decoration: none;
+		text-align: left;
+	}
+	.mainNavbar{
+		display: none;
+	}
+	.headercontact{
+		margin-top: 120px;
+	}
+	
+}
   @media only screen and (max-width:534px) {
 	/* For tablet and mobile phones: */
 		.next, .prev{
@@ -542,7 +649,7 @@ fieldset {
   }
 
 
-  @media only screen and (max-width: 412px) {
+  @media only screen and (max-width: 460px) {
 	.NavbartoAnotherPage{
 		margin-top: 4px;
 	}
@@ -556,45 +663,30 @@ fieldset {
 		margin-top: 30vh;
 	}
   }
-
-  @media only screen and (max-width: 504px) {
-	.contact {
-		display: none;
-		color: chocolate;
-	}
-	#check:checked ~ .navbar .contact{
-		display: block;
-		position: static;
-		margin-left: 8%;
-		margin-top: 8%;
-	}
-
-	.navbar .headercontact{
-		display: block;
-	}
-	
-  }
 .menuBtn{
 		display: none;
 	}
 
 .HomeButton{
-	background-color: darkorange;
+	background-color: rgba(255, 140, 0, 1);
 	width: 340px;
 	height: 152px;
 	left: -35px;
 	position: absolute;
 	transform: skewX(-20deg);
 	z-index: 2;
+	top: 1%;
+	cursor: pointer;
 }
 
 .NavbartoAnotherPage{
-	background-color: #FFFF00;
-	width: 82.45%;
+	background-color: rgba(76, 76, 22, 0.55);
+	width: 82.2%;
 	height: 76px;
 	position: absolute;
 	left: 17.48%;
 	z-index: 1;
+	top: 1%;
 	
 }
 
@@ -609,9 +701,9 @@ footer {
 
 .contact {
 	position: absolute;
-	right: 1%;
+	right: 2%;
 	z-index: 5;
-	top: 90px;
+	top: 83px;
 }
 .contact img{
 	width: 21px;

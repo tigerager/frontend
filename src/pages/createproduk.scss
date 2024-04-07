@@ -1,0 +1,23 @@
+.createproduk{
+    margin-top: 185px;
+    text-align: center;
+    color: green;
+    .userCreateContainer{
+        background-color: chartreuse;
+        padding: 2%;
+        width: 30%;
+        border-radius: 8%;
+        margin-left: 33%;
+        .inputUserCreate{
+            padding: 0.7%;
+            border-radius: 4%;
+            font-size: 14px;
+            font-family: cursive;
+            display: block;
+            margin: 1% 0 1% 18.5% ;
+            position: relative;
+            width: 60%;
+            height: 30px;
+          }
+      }
+}

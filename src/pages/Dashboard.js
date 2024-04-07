@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import Html from './images/html.png';
-import Phone from './images/phone.png';
-import Mail from './images/mail.png';
-import Menu from './images/menu.png';
 import Profile from './images/profile.jpeg';
 import Js from './images/js.png';
 import Reactjs from './images/reactjs.png';
@@ -15,7 +12,6 @@ import Arrow from './images/arrow.png';
 import Cek from './images/cek.png';
 import Node from './images/node.png';
 import Express from './images/express.png';
-import Afiflogo from './images/Afiflogo.png';
 import BG from './images/slideImage1.png';
 import BG1 from './images/slideImage2.png';
 import BG2 from './images/slideImage3.png';
@@ -48,11 +44,6 @@ function Dashboard() {
 		} else {
 			document.getElementById('popup').style.visibility = 'hidden'
 		}
-	}
-	
-	function unCheck(){
-		let input = document.getElementById("check");
-		input.click();
 	}
 
 	let index = 1
@@ -88,57 +79,21 @@ function Dashboard() {
 		}
 		bg[index-1].style.display = "block"
 		dots[index-1].className += " active"
-
-  }
+  	}
 
   return (
     <div>
-       <header id="home">
-	   <div className='NavbartoAnotherPage' ></div>
-	   <div className='HomeButton'></div>
-        <nav>
-            <div style={{ zIndex:'3' }} className="name">
-			  <img src={Afiflogo} alt=''/>
-		</div>
-            <input type="checkbox" id="check" />
-            <label for="check">
-              <img alt='' className="menuBtn" src={Menu} />
-            </label> {/*letakkan div setelah label supaya (~) berfungsi sebagai if state*/}
-			<div className="contact">
-				<div className="email">
-					<img alt='' src={Mail} />
-					<span>afifnusada@gmail.com</span><br/>
-					</div>
-					<img alt='' src={Phone} />
-					<span>+6281276452711</span>
-				</div>
-            <div className="navbar">
-				<span className='menu'>Menu</span>
-                <a href="#about" onClick={unCheck}>About Me</a>
-                <a href="#skills" onClick={unCheck}>Skills</a>
-                <a href="#projects" onClick={unCheck}>Projects</a>
-                <a href="#recommendations" onClick={unCheck}>Recommendations</a>
-				<span className='headercontact'>Contact</span>
-				<div className="contact">
-				<div className="email">
-					<img alt='' src={Mail} />
-					<span>afifnusada@gmail.com</span><br/>
-					</div>
-					<img alt='' src={Phone} />
-					<span>+6281276452711</span>
-				</div>
-            </div>
-          </nav>
-        </header>
-		<main>
+		<main className='aboutContent'>
 			<div className='about' id="about">
 				<img alt='' className="profil" src={Profile} />
+				<div className='introWrapper'>
 				<span className="intro">
 					<h1>Hi, My name is Afif Rahmat Nusada</h1>
 					<p>I am a Bachelor's Degree in Informatic Engineering/Computer Science. I've created many websites and desktop application in order to improve my skill. You will be satisfied with my service. So feel free to order my service.
 					I will accept anything that you want such as custom design and features that you want. I will make any websites using react and node+expressjs. I will also make a custom desktop application for you using c# programming language.
 					</p>
 				</span>
+				</div>
 			</div>
 			<div className='content'>
 				<img src={BG} className="bg" alt="" />
@@ -250,19 +205,55 @@ function Dashboard() {
 		<div className="projectContainer">
 			<h1>Projects</h1><hr/>
 			<ul>
+				<h2>Chat and To do list App Using React and firebase</h2>
+				<li class="details"><span>Created chat and todo list app using react js library and my own css. 
+				This is the link of my project in github : <a href= "https://github.com/tigerager/simpulapp_chalenge.git">Click this!</a>
+				</span>
+				</li>
+				<hr/>
+			</ul>
+			<ul>
+				<h2>Project For My Home Town To Control The Given Aid Using C# language</h2>
+				<li class="details"><span>Created C# project to help the people in my hometown to control the given aid such as where the 
+				aid should be given. This is the link of my project in github : <a href="https://github.com/tigerager/ProjectC-Nagari.git">Click this!</a></span>
+				</li>
+				<hr/>
+			</ul>
+			<ul>
+				<h2>Front End Project Using React</h2>
+				<li class="details"><span>Created Front End App using react js library to get a certificate. This is 
+				the link of my project in github : <a href="https://github.com/tigerager/CourseraFrontEndPj.github.io.git">Click this!</a></span>
+				</li>
+				<hr/>
+			</ul>
+			<ul>
+				<h2>Back End Project Using Express</h2>
+				<li class="details"><span>Created Back End App using Express js to get a certificate. 
+				This is the link of my project in github : <a href="https://github.com/tigerager/expressBookReviews.git">Click this!</a>
+				</span>
+				</li>
+				<hr/>
+			</ul>
+			<ul>
 				<h2>Shooter Game</h2>
-				<li className="details"><span>Created a shooter game using Unity application and C# programming language.</span></li>
+				<li class="details"><span>Created a shooter game using Unity application and C# programming language.</span></li>
 				<hr/>
 			</ul>
 			<ul>
 				<h2>Fruits Store Online</h2>
-				<li className="details"><span>Created an online shop that sells fruits from my village using html, css, and javascript.</span>
+				<li class="details"><span>Created an online shop that sells fruits from my village using html, css, and javascript.</span>
 				</li>
 				<hr/>
 			</ul>
 			<ul>
 				<h2>Car Selling</h2>
-				<li className="details"><span>Created a website for the car dealer to sell their cars.</span></li>
+				<li class="details"><span>Created a website for the car dealer to sell their cars. 
+				This is the link of my project in github : <a href="https://github.com/tigerager/MitsubishiWebProject.git">Click this!</a>
+				</span>
+				</li>
+				<li class="details">
+					<span>This is the active website that I've hosted : <a href="http://afifnusada123.000webhostapp.com/">Click this!</a></span>
+				</li>
 				<hr/>
 			</ul>
 		</div>
