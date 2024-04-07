@@ -40,10 +40,10 @@ function App() {
 				</div>
         <div className="navbar">
             <span className='menu'>Home</span>
-                    <a href="frontend#about" onClick={unCheck}>About Me</a>
-                    <a href="frontend#skills" onClick={unCheck}>Skills</a>
-                    <a href="frontend#projects" onClick={unCheck}>Projects</a>
-                    <a href="frontend#recommendations" onClick={unCheck}>Recommendations</a>
+                    <a href="/frontend#about" onClick={unCheck}>About Me</a>
+                    <a href="/frontend#skills" onClick={unCheck}>Skills</a>
+                    <a href="/frontend#projects" onClick={unCheck}>Projects</a>
+                    <a href="/frontend#recommendations" onClick={unCheck}>Recommendations</a>
             <span className='menu'>Main Navbar</span>
             <nav className='mainNavbarPhone'>
                   <Link onClick={unCheck} className='aLink' to='/frontend'> {/*Untuk membuat filenya langsung terbuka maka gunakan nama repositori disini 'frontend' sebagai ganti dari '/'*/}
