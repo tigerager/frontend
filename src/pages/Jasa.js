@@ -1,16 +1,20 @@
 import React, { useEffect } from 'react';
 import './jasa.scss';
-//import axios from 'axios';
 
 const Jasa = () => {
+  // let [products, setProducts] = useState([]);
+  // let [products1, setProducts1] = useState([]);
+  // let [products2, setProducts2] = useState([]);
+  // let [products3, setProducts3] = useState([]);
+  // let [products4, setProducts4] = useState([]);
+  // let [products5, setProducts5] = useState([]);
+  // let [products6, setProducts6] = useState([]);
   useEffect(()=>{
-    // axios.get('http://mitsubishiwebproject.test/api/users').then((response)=>{
-    //     setCars(response.data);
-    // });  //to connect to laravel back end 
-  },[])
+      
+  },[]) 
   return (
     <div className='jasa'>
-      
+
     </div>
   )
 }
