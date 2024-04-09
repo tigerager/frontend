@@ -205,7 +205,7 @@ function Dashboard() {
 		<div className="projectContainer">
 			<h1>Projects</h1><hr/>
 	                <ul>
-				<h2>This Ap That I've Made Using Reactjs</h2>
+				<h2>This App Is Made with Reactjs By Me</h2>
 				<li class="details"><span>This is my portfolio website. I've made this website using my css and scss skill, i've made this without any template or anything. I made this all by myself to train myself. I've made a plan to use this website to support my business also.
 				</span>
 				</li>
