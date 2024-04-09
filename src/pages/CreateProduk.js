@@ -29,15 +29,11 @@ const CreateProduk = () => {
         //     toast.error(err, {autoClose:false})
         // });   ///for connecting to backend
         axios.post('https://dummyjson.com/products/add', {
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
               title: formData.get("title"),
               category: formData.get("category"),
               stock: formData.get("stock"),
-              images: formData.get("gambar")
-              /* other product data */
-            })
-        }).then(res => toast.success(formData.get("title").toUpperCase()+" BERHASIL DITAMBAHKAN", {autoClose:false, onClose: ()=>{navigate('/produk')}}));
+              images: formData.get("gambar") 
+        }).then(res => toast.success(res.data.title.toUpperCase()+" BERHASIL DITAMBAHKAN", {autoClose:false, onClose: ()=>{navigate('/produk')}}));
          }
         });
   return (
