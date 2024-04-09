@@ -204,14 +204,14 @@ function Dashboard() {
 	<main className="projects" id="projects">
 		<div className="projectContainer">
 			<h1>Projects</h1><hr/>
-	                <ul>
-				<h2>This App Is Made with Reactjs By Me</h2>
+			<ul>
+				<h2>The Website That You're Visiting Is Made with Reactjs By Me</h2>
 				<li class="details"><span>This is my portfolio website. I've made this website using my css and scss skill, i've made this without any template or anything. I made this all by myself to train myself. I've made a plan to use this website to support my business also.
 				</span>
 				</li>
 				<hr/>
 			</ul>
-	                <ul>
+			<ul>
 				<h2>Backend app using Expressjs and nodejs that I will use in the future if the business has been run</h2>
 				<li class="details"><span> I've made the backend and the rest api using express and nodejs. I've been using mysql database for this app.
 				This is the link of my project in github : <a href= "https://github.com/tigerager/backend.git">Click this!</a>
