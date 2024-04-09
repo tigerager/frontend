@@ -1,5 +1,30 @@
 .jasa{
     margin-top: 185px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+    .jasaContainer{
+        background-color: rgb(217, 227, 227);
+        padding: 5%;
+        margin: 2%;
+        display: block;
+        box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.14);
+        -webkit-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.14);
+        -moz-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.14);
+        .itemContainer{
+            background-color: rgba(116, 163, 47, 0.45);
+            padding: 5%;
+            margin: 2%;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease;
+            transition: .3s ease;
+            cursor: pointer;
+            &:hover{
+                -webkit-transform: scale(1.04);
+                -ms-transform: scale(1.04);
+                transform: scale(1.04);
+            }
+        }
+    }
 }

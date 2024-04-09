@@ -1,20 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './jasa.scss';
+import axios from 'axios';
 
 const Jasa = () => {
-  // let [products, setProducts] = useState([]);
-  // let [products1, setProducts1] = useState([]);
-  // let [products2, setProducts2] = useState([]);
-  // let [products3, setProducts3] = useState([]);
-  // let [products4, setProducts4] = useState([]);
-  // let [products5, setProducts5] = useState([]);
-  // let [products6, setProducts6] = useState([]);
+  let [services, setServices] = useState([]);
   useEffect(()=>{
-      
+    axios.get('https://jsonplaceholder.typicode.com/todos').then((response)=>{
+      setServices(response.data);
+    })   
   },[]) 
   return (
     <div className='jasa'>
+      <div className='jasaContainer'>
+        {services ? 
+          services.map(
+            ((value, index) => {
+              return (
+                <>
+                <div className='itemContainer'>
+                    <div>{value.id}</div>
+                    <div>{value.title}</div>
 
+                </div>
+                </>
+              )
+            })
+          )
+         : "tidak ada"}
+      </div>
     </div>
   )
 }

@@ -11,20 +11,31 @@ const CreateProduk = () => {
         initialValues: { 
             tipe_produk: "",
             nama_produk: "",
-            jumlah: null
+            jumlah: 1
          },
          onSubmit: (data) => {
             const formData = new FormData();
-            formData.append("tipe_produk", data.tipe_produk);
-            formData.append("nama_produk", data.nama_produk);
-            formData.append("jumlah", data.jumlah);
-            formData.append("gambar", file)
-            axios.post('http://localhost:3001/produks/registerProduk', formData).then((response) => {
-                toast.success(response.data, {autoClose:false, onClose: ()=>{window.location.reload()}})
-         })
-        .catch((err) => {
-            toast.error(err, {autoClose:false})
-        });
+            formData.append("category", data.tipe_produk);
+            formData.append("title", data.nama_produk);
+            formData.append("stock", data.jumlah);
+            formData.append("gambar", ["test.png", file.name]);
+        //    formData.append("gambar", file)
+        //     axios.post('http://localhost:3001/produks/registerProduk', formData).then((response) => {
+        //         toast.success(response.data, {autoClose:false, onClose: ()=>{window.location.reload()}})
+        //  })
+        // .catch((err) => {
+        //     toast.error(err, {autoClose:false})
+        // });   ///for connecting to backend
+        axios.post('https://dummyjson.com/products/add', {
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              title: formData.get("title"),
+              category: formData.get("category"),
+              stock: formData.get("stock"),
+              images: formData.get("gambar")
+              /* other product data */
+            })
+        }).then(res => toast.success(formData.get("title").toUpperCase()+" BERHASIL DITAMBAHKAN", {autoClose:false, onClose: ()=>{window.location.reload()}}));
          }
         });
   return (
