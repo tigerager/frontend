@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.792284f4.css",
-    "main.js": "/frontend/static/js/main.50a34021.js",
+    "main.css": "/frontend/static/css/main.bedec90e.css",
+    "main.js": "/frontend/static/js/main.d64242ba.js",
     "static/js/453.d855a71b.chunk.js": "/frontend/static/js/453.d855a71b.chunk.js",
     "static/media/bg.jpg": "/frontend/static/media/bg.a3339421092fea2a3968.jpg",
     "static/media/Developing Front-End Apps with React_page-0001.jpg": "/frontend/static/media/Developing Front-End Apps with React_page-0001.f9909ae829e23742b40d.jpg",
@@ -19,12 +19,12 @@
     "static/media/reactjs.png": "/frontend/static/media/reactjs.6709c5449aef3915c9ab.png",
     "static/media/java.png": "/frontend/static/media/java.df2ef9fdccdd35c4e527.png",
     "index.html": "/frontend/index.html",
-    "main.792284f4.css.map": "/frontend/static/css/main.792284f4.css.map",
-    "main.50a34021.js.map": "/frontend/static/js/main.50a34021.js.map",
+    "main.bedec90e.css.map": "/frontend/static/css/main.bedec90e.css.map",
+    "main.d64242ba.js.map": "/frontend/static/js/main.d64242ba.js.map",
     "453.d855a71b.chunk.js.map": "/frontend/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.792284f4.css",
-    "static/js/main.50a34021.js"
+    "static/css/main.bedec90e.css",
+    "static/js/main.d64242ba.js"
   ]
 }
