@@ -4,9 +4,11 @@ import {useFormik} from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const CreateProduk = () => {
     const [file, setFile] = useState();
+    let navigate = useNavigate();
     const formik = useFormik({
         initialValues: { 
             tipe_produk: "",
@@ -35,14 +37,14 @@ const CreateProduk = () => {
               images: formData.get("gambar")
               /* other product data */
             })
-        }).then(res => toast.success(formData.get("title").toUpperCase()+" BERHASIL DITAMBAHKAN", {autoClose:false, onClose: ()=>{window.location.reload()}}));
+        }).then(res => toast.success(formData.get("title").toUpperCase()+" BERHASIL DITAMBAHKAN", {autoClose:false, onClose: ()=>{navigate('/produk')}}));
          }
         });
   return (
     <div className='createproduk'>
         <h1>Masukkan Produk</h1><hr style={{ opacity: '0.4', width: '80%', marginTop: '-10px', marginBottom:'40px' }}/>
         <form onSubmit={formik.handleSubmit} className='userCreateContainer' >
-        <ToastContainer style={{ marginTop: "3%", marginRight: "27.5%", width: "38%" }} />
+        <ToastContainer className='toast' />
             <input onChange={formik.handleChange} value={formik.values.tipe_produk} className='inputUserCreate' name="tipe_produk" type='text' placeholder='Tipe produk' />
             <input onChange={formik.handleChange} value={formik.values.nama_produk} className='inputUserCreate' name="nama_produk" type='text' placeholder='Nama produk' />
             <input onChange={formik.handleChange} value={formik.values.jumlah} className='inputUserCreate' name="jumlah" type='number' placeholder='Jumlah produk' />
