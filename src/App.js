@@ -20,11 +20,11 @@ function App() {
     <div className="App">
       <header id="home">
 	   <div className='NavbartoAnotherPage' ></div>
-	   <div onClick={()=>{navigate('/')}} className='HomeButton'></div>
+	   <div onClick={()=>{navigate('/frontend')}} className='HomeButton'></div>
      <div className='removeOver'></div>
         <nav>
           <div style={{ zIndex:'3' }} className="name">
-			    <img onClick={()=>{navigate('/')}} src={Afiflogo} alt=''/>
+			    <img onClick={()=>{navigate('/frontend')}} src={Afiflogo} alt=''/>
 		  </div>
             <input type="checkbox" id="check" />
             <label for="check">

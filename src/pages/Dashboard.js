@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Html from './images/html.png';
-import Profile from './images/profile.jpeg';
+import Profile from './images/profile.jpg';
 import Js from './images/js.png';
 import Reactjs from './images/reactjs.png';
 import C from './images/c.png';
