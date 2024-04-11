@@ -80,6 +80,16 @@ function Dashboard() {
 		bg[index-1].style.display = "block"
 		dots[index-1].className += " active"
   	}
+	let auto = 1;
+	setInterval(function (){
+		if(auto>bg.length){
+			auto = 1;
+		}
+		else{
+			auto++
+			add(auto);
+		}
+	}, 3000)
 
   return (
     <div>
