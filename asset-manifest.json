@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontend/static/css/main.eab7653b.css",
-    "main.js": "/frontend/static/js/main.e6824850.js",
+    "main.js": "/frontend/static/js/main.bfba97d6.js",
     "static/js/453.d855a71b.chunk.js": "/frontend/static/js/453.d855a71b.chunk.js",
+    "static/media/profile.jpg": "/frontend/static/media/profile.94ed79dbb27535462a0b.jpg",
     "static/media/bg.jpg": "/frontend/static/media/bg.a3339421092fea2a3968.jpg",
     "static/media/Developing Front-End Apps with React_page-0001.jpg": "/frontend/static/media/Developing Front-End Apps with React_page-0001.f9909ae829e23742b40d.jpg",
     "static/media/slideImage2.png": "/frontend/static/media/slideImage2.23510b34ca37ebc95252.png",
     "static/media/slideImage3.png": "/frontend/static/media/slideImage3.dfb00d7159600618d9cd.png",
     "static/media/slideImage1.png": "/frontend/static/media/slideImage1.68932591c0c1181211ec.png",
     "static/media/phone.png": "/frontend/static/media/phone.a3b2abacf1e861dcf879.png",
-    "static/media/profile.jpeg": "/frontend/static/media/profile.3b102809f2ef8a0d589e.jpeg",
     "static/media/express.png": "/frontend/static/media/express.67a235b3413090a0f73a.png",
     "static/media/Afiflogo.png": "/frontend/static/media/Afiflogo.6639334f3ea8a1dfb7fd.png",
     "static/media/node.png": "/frontend/static/media/node.7c94c770dd462ef14ec9.png",
@@ -20,11 +20,11 @@
     "static/media/java.png": "/frontend/static/media/java.df2ef9fdccdd35c4e527.png",
     "index.html": "/frontend/index.html",
     "main.eab7653b.css.map": "/frontend/static/css/main.eab7653b.css.map",
-    "main.e6824850.js.map": "/frontend/static/js/main.e6824850.js.map",
+    "main.bfba97d6.js.map": "/frontend/static/js/main.bfba97d6.js.map",
     "453.d855a71b.chunk.js.map": "/frontend/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eab7653b.css",
-    "static/js/main.e6824850.js"
+    "static/js/main.bfba97d6.js"
   ]
 }
