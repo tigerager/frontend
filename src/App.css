@@ -156,11 +156,11 @@ main h1{
 	text-align: center;
 }
 
-.firstLine, .secondLine{
+.Line{
 	display: flex;
 }
 
-.firstLine div, .secondLine div{
+.Line div {
 	box-shadow: 5px 5px 8px gray;
 	margin: 1.5%;
 	background-color: whitesmoke;
@@ -168,24 +168,20 @@ main h1{
 	height: auto;
 }
 
-.skills .skillWrapper .firstLine div img, .skills .skillWrapper .secondLine div img{
+.skills .skillWrapper .Line div img {
 	width: 35%;
 	height: 38%;
 }
 
-.skills .skillWrapper .firstLine div, .skills .skillWrapper .secondLine div{
+.skills .skillWrapper .Line div {
 	padding: 2% 2% 1% 2%;
 }
 
-.skills .skillWrapper .secondLine div h4{
-	margin-bottom: 14%;
-}
-
-.skills .skillWrapper .firstLine div h4{
+.skills .skillWrapper .Line div h4{
 	margin-bottom: 2%;
 }
 
-.skills .skillWrapper .firstLine div h4, .skills .skillWrapper .secondLine div h4{
+.skills .skillWrapper .Line div h4 {
 	padding-top: 9%;
 }
 
@@ -193,7 +189,7 @@ main h1{
 	margin: 2%;
 }
 
-.skills .skillWrapper .firstLine div span, .skills .skillWrapper .secondLine div span{
+.skills .skillWrapper .Line div span {
 	font-weight: bold;
 	font-size: 12px;
 }
@@ -425,12 +421,12 @@ fieldset {
 		text-align: justify;
 	}
 
-	.firstLine, .secondLine {
+	.Line {
 		display: block;
 		width: 60%;
 	}
 
-	.firstLine div, .secondLine div{
+	.Line div {
 			  width: 120%;
 			  margin-top: 10%;
 			  margin-left: 18%;

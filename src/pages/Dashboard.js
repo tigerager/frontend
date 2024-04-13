@@ -125,7 +125,7 @@ function Dashboard() {
 	<main className="skills" id="skills">
 		<div className="skillWrapper">
 		<h1>My Skills</h1><hr/>
-			<div className="firstLine">
+			<div className="Line">
 				<div className="html">
 					<img alt='' className="img" src={Html} />
 					<br/>
@@ -167,7 +167,7 @@ function Dashboard() {
 					<h4>3 Years Experience</h4>
 				</div>
 			</div>
-			<div className="secondLine">
+			<div className="Line">
 				<div className="php">
 					<img alt='' className="img6" src={Php} />
 					<br/>
