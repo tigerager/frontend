@@ -123,7 +123,7 @@ nav{
 
 }
 
-main .profil{
+section .profil{
 	width: 140px;
 	height: 210px;
 	border-radius: 50%;
@@ -138,7 +138,7 @@ main .profil{
 	
 }
 
-main h1{
+section h1{
 	color: #04895D;
 	margin-left: -2.5%;
 }
@@ -649,13 +649,13 @@ fieldset {
 	.NavbartoAnotherPage{
 		margin-top: 4px;
 	}
-	main .profil{
+	section .profil{
 		position: absolute;	
 		width: 20vh;
 		height: 30vh;
 		left: 25%;
 	}
-	main .intro{
+	section .intro{
 		margin-top: 30vh;
 	}
   }

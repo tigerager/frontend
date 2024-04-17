@@ -9,8 +9,25 @@ import Menu from './pages/images/menu.png';
 import Jasa from './pages/Jasa';
 import Produk from './pages/Produk';
 import CreateProduk from './pages/CreateProduk';
+import UserCreate from './pages/UserCreate';
+import UserContext from './pages/context/UserContext';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
+  const [cek, setCek] = useState('');
+  const Logout = () => {
+    axios.get('http://localhost:3001/users/logout', {withCredentials: true}) //catatan kalau untuk menghapus cookie harus pakai get
+    .then((response)=>{  
+      toast.success(response.data, {onClose: ()=>{window.location.reload()}});
+    });
+  }
+  useEffect(()=>{
+    axios.get('http://localhost:3001/users/cek', {withCredentials: true})
+        .then((response)=>{  
+        setCek(response.data)});
+  }, []);
   function unCheck(){
 		let input = document.getElementById("check");
 		input.click();
@@ -19,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <header id="home">
+      <ToastContainer className='toast' />
 	   <div className='NavbartoAnotherPage' ></div>
 	   <div onClick={()=>{navigate('/frontend')}} className='HomeButton'></div>
      <div className='removeOver'></div>
@@ -27,7 +45,7 @@ function App() {
 			    <img onClick={()=>{navigate('/frontend')}} src={Afiflogo} alt=''/>
 		  </div>
             <input type="checkbox" id="check" />
-            <label for="check">
+            <label htmlFor="check">
               <img alt='' className="menuBtn" src={Menu} />
             </label> {/*letakkan div setelah label supaya (~) berfungsi sebagai if state*/}
 			<div className="contact">
@@ -75,21 +93,42 @@ function App() {
         <Link className='aLink' to='/frontend'>
           Home
         </Link>
-        <Link className='aLink' to='/produk'>
+        {cek !== 'tidak ada' ? 
+        <Link className='aLink' to='/usercontext'>
           Produk
-        </Link>
+        </Link> :
+        <></>
+        }
+        {cek !== 'tidak ada' ?
         <Link className='aLink' to='/jasa'>
           Jasa
-        </Link>
+        </Link> :
+        <></>
+        }
         <Link className='aLink' to='/penjualan'>
           Penghasilan
         </Link>
+        <Link className='aLink' to='/register'>
+          Daftar
+        </Link>
+        {cek === 'tidak ada' ? 
+        <Link className='aLink' to='/login'>
+          Login
+        </Link> 
+        :
+        <Link className='aLink' onClick={Logout}>
+          Logout
+        </Link>
+        }
       </nav>
         <Routes>
+            <Route path='/register' element={<UserCreate />}/>
+            <Route path='/login' element={<UserContext />}/>
             <Route path='/frontend' element={<Dashboard />}/>
             <Route path='/penjualan' element={<Penjualan />}/>
             <Route path='/jasa' element={<Jasa />}/>
             <Route path='/produk' element={<Produk />}/>
+            <Route path='/usercontext' element={<UserContext />}/>
             <Route path='/createProduk' element={<CreateProduk />}/>
         </Routes>
     </div>
