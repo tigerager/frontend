@@ -126,10 +126,10 @@ function App() {
             <Route path='/login' element={<UserContext />}/>
             <Route path='/frontend' element={<Dashboard />}/>
             <Route path='/penjualan' element={<Penjualan />}/>
-            <Route path='/jasa' element={<Jasa />}/>
-            <Route path='/produk' element={<Produk />}/>
+            <Route path='/jasa' element={cek!=='tidak ada' ? <Jasa /> : <UserContext />}/>
+            <Route path='/produk' element={cek!=='tidak ada' ? <Produk /> : <UserContext />}/>
             <Route path='/usercontext' element={<UserContext />}/>
-            <Route path='/createProduk' element={<CreateProduk />}/>
+            <Route path='/createProduk' element={cek!=='tidak ada' ? <CreateProduk /> : <UserContext />}/>
         </Routes>
     </div>
   );

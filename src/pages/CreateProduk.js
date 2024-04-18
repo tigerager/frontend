@@ -39,13 +39,13 @@ const CreateProduk = () => {
   return (
     <div className='createproduk'>
         <h1>Masukkan Produk</h1><hr style={{ opacity: '0.4', width: '80%', marginTop: '-10px', marginBottom:'40px' }}/>
-        <form onSubmit={formik.handleSubmit} className='userCreateContainer' >
+        <form onSubmit={formik.handleSubmit} className='userCreateContainer' style={{ height: '250px' }} >
         <ToastContainer className='toast' />
             <input onChange={formik.handleChange} value={formik.values.tipe_produk} className='inputUserCreate' name="tipe_produk" type='text' placeholder='Tipe produk' />
             <input onChange={formik.handleChange} value={formik.values.nama_produk} className='inputUserCreate' name="nama_produk" type='text' placeholder='Nama produk' />
             <input onChange={formik.handleChange} value={formik.values.jumlah} className='inputUserCreate' name="jumlah" type='number' placeholder='Jumlah produk' />
             <input accept='image/*' onChange={e=>setFile(e.currentTarget.files[0])} className='inputUserCreate' type='file' name="gambar" />
-            <button type='submit' style={{ position: 'absolute', top: '470px', left: '34.5%', height: '40px' }} >Upload Produk</button>
+            <button type='submit' style={{ position: 'absolute', top: '510px', left: '34.5%', height: '40px' }} >Upload Produk</button>
         </form>
     </div>
   )
