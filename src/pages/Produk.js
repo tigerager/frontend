@@ -6,15 +6,15 @@ import { Context } from './context/UserContext';
 
 const Produk = () => {
     //const [produks, setProduks] = useState([]);
-    const tkn = useContext(Context);
+    const {cek} = useContext(Context);
     let [products, setProducts] = useState([]);
     useEffect(()=>{
         //lakukan pengecekan status apakah token ada atau tidak ada
 
-        if(tkn !== "tidak ada"){
+        if(cek !== "tidak ada"){
             axios.get('http://localhost:3001/produks', {
                 headers: {
-                    token: tkn
+                    token: cek
                 }}).then((response)=>{  //menyambungkan ke backend
                     if(response.data !== "User not logged in"){
                         setProducts(response.data);
@@ -24,11 +24,11 @@ const Produk = () => {
     //   setProducts(response.data);
         });   
         }
-    }, [tkn]);
+    }, [cek]);
   return (
     <div className='produk'>
         <h1>Pilihan Produk</h1>
-        <Link className='btnCreateProduk' to={tkn !== "tidak ada" ? '/createProduk' : '/login'}>Masukkan Produk</Link>
+        <Link className='btnCreateProduk' to={cek !== "tidak ada" ? '/createProduk' : '/login'}>Masukkan Produk</Link>
         <div className='produkContainer'>
         {products? 
                 products.map((value, key)=>{

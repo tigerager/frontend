@@ -14,6 +14,8 @@ import UserContext from './pages/context/UserContext';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
+import Login from './pages/Login';
+
 
 function App() {
   const [cek, setCek] = useState('');
@@ -34,6 +36,7 @@ function App() {
 	}
   let navigate = useNavigate();
   return (
+    <UserContext>
     <div className="App">
       <header id="home">
       <ToastContainer className='toast' />
@@ -108,9 +111,13 @@ function App() {
         <Link className='aLink' to='/penjualan'>
           Penghasilan
         </Link>
+        {cek === "tidak ada" ?
         <Link className='aLink' to='/register'>
           Daftar
         </Link>
+        :
+        <></>
+        }
         {cek === 'tidak ada' ? 
         <Link className='aLink' to='/login'>
           Login
@@ -123,15 +130,15 @@ function App() {
       </nav>
         <Routes>
             <Route path='/register' element={<UserCreate />}/>
-            <Route path='/login' element={<UserContext />}/>
+            <Route path='/login' element={cek!=='tidak ada' ? <Produk /> : <Login />}/>
             <Route path='/frontend' element={<Dashboard />}/>
             <Route path='/penjualan' element={<Penjualan />}/>
-            <Route path='/jasa' element={cek!=='tidak ada' ? <Jasa /> : <UserContext />}/>
-            <Route path='/produk' element={cek!=='tidak ada' ? <Produk /> : <UserContext />}/>
-            <Route path='/usercontext' element={<UserContext />}/>
-            <Route path='/createProduk' element={cek!=='tidak ada' ? <CreateProduk /> : <UserContext />}/>
+            <Route path='/jasa' element={cek!=='tidak ada' ? <Jasa /> : <Login />}/>
+            <Route path='/produk' element={cek!=='tidak ada' ? <Produk /> : <Login />}/>
+            <Route path='/createProduk' element={cek!=='tidak ada' ? <CreateProduk /> : <Login />}/>
         </Routes>
     </div>
+    </UserContext>
   );
 }
 
