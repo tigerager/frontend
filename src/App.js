@@ -25,6 +25,14 @@ function App() {
       toast.success(response.data, {onClose: ()=>{window.location.reload()}});
     });
   }
+  const konfirmasi = () => {
+    let text = "Yakin Ingin Logout?";
+    if (window.confirm(text) === true) {
+      Logout();
+    } else {
+      
+    }
+  }
   useEffect(()=>{
     axios.get('http://localhost:3001/users/cek', {withCredentials: true})
         .then((response)=>{  
@@ -97,7 +105,7 @@ function App() {
           Home
         </Link>
         {cek !== 'tidak ada' ? 
-        <Link className='aLink' to='/usercontext'>
+        <Link className='aLink' to='/produk'>
           Produk
         </Link> :
         <></>
@@ -123,7 +131,7 @@ function App() {
           Login
         </Link> 
         :
-        <Link className='aLink' onClick={Logout}>
+        <Link className='aLink' onClick={konfirmasi}>
           Logout
         </Link>
         }
